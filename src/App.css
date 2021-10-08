@@ -20,7 +20,7 @@ nav {
   border-radius: 50%;
   height: 200px;
   width: 200px;
-  border: 2px solid #3b62e2da;
+  border: 2px solid rgba(255, 0, 0, 0.623);
 }
 
 .menu-container {
@@ -85,4 +85,35 @@ nav {
   position: absolute;
   right: 1px;
   cursor: pointer;
+}
+
+.social-icons-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* background-color: red; */
+  margin-top: 50px;
+  width: 10%;
+}
+
+.social-icons {
+  font-size: 3rem;
+  margin: -3px;
+}
+
+#fb {
+  color: #108af0;
+}
+
+#linkedin {
+  color: #0966c2;
+}
+#instagram {
+  color: #ff9148;
+}
+#twitter {
+  color: #1e9cea;
+}
+#github {
+  color: #171516;
 }
