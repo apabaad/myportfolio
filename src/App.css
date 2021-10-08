@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+body {
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  /* background-color: black; */
+}
+.header {
+  margin: 100px 250px 0px 250px;
+  display: flex;
+  font-family: Roboto;
+  /* background-color: aliceblue; */
+  width: 90%;
+}
+
+.dp {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #3b62e2da;
+}
+
+.menu-container {
+  /* background-color: blanchedalmond; */
+  width: 100%;
+}
+
+.menu-container .logo {
+  margin-left: 35px;
+  letter-spacing: 0.3em;
+  font-size: 2.2rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.747);
+  font-weight: 900;
+  /* border-bottom: 4px solid #f51c40; */
+}
+
+.logo:after {
+  background: #3b62e2da;
+  border-radius: 10px;
+  content: '';
+  display: block;
+  height: 6px;
+  max-width: 50px;
+  margin-left: 30px;
+}
+
+.menu-container .menu {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #60817c;
+}
+
+.toggle {
+  height: 20px;
+  width: 57px;
+  background: white;
+  border: 2px solid black;
+  border-right: none;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 100px;
+  border-radius: 25px 15px 15px 25px;
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.toggle-icon {
+  color: goldenrod;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle-ball {
+  height: 18px;
+  width: 18px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  right: 1px;
+  cursor: pointer;
 }
