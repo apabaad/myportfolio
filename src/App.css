@@ -1,12 +1,6 @@
-body {
-  /* font-family: 'Times New Roman', Times, serif; */
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-  font-family: 'Courier New', Courier, monospace;
-}
-
 nav {
   display: flex;
-  /* background-color: black; */
+  /* background-color: aliceblue; */
 }
 .header {
   margin: 100px 250px 0px 250px;
@@ -31,36 +25,47 @@ nav {
 .menu-container .logo {
   margin-left: 35px;
   letter-spacing: 0.3em;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.747);
+  color: rgba(0, 0, 0, 0.685);
   font-weight: 900;
-  /* border-bottom: 4px solid #f51c40; */
 }
 
 .logo:after {
   background: #3b62e2da;
   border-radius: 10px;
-  content: '';
+  content: '\eb99';
   display: block;
   height: 6px;
-  max-width: 50px;
+  max-width: 70px;
   margin-left: 30px;
 }
 
 .menu-container .menu {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   list-style: none;
   font-size: 1.5rem;
 }
+.menu a:hover {
+  color: #5b79e6;
+
+  /* transform: scale(1.5); */
+  /* transition: all 0.3s ease-in-out 0.1s; */
+  transform: translate3d(20px, 0, 0);
+}
 
 .menu a {
   text-decoration: none;
-  color: #60817c;
+  /* color: #60817c; */
+  color: rgba(255, 0, 0, 0.753);
+  font-weight: 800;
 }
 
+.menu a span {
+  border-bottom: 2px solid red;
+}
 .toggle {
   height: 20px;
   width: 57px;
@@ -87,18 +92,38 @@ nav {
   cursor: pointer;
 }
 
+.bodySection {
+  display: flex;
+  background-color: linear-gradient rgb(212, 219, 226);
+  /* background: linear-gradient(#eff8ff, #ddecdd); */
+  margin: 0px;
+  padding: 0px;
+}
+
 .social-icons-div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* background-color: red; */
-  margin-top: 50px;
-  width: 10%;
+  margin-top: 150px;
+  width: 40px;
+  position: fixed;
+  margin-left: 0px;
+  background: white;
+  height: 235px;
+}
+
+.findme {
+  font-size: small;
 }
 
 .social-icons {
-  font-size: 3rem;
-  margin: -3px;
+  font-size: 55px;
+  margin: -5px;
+  cursor: pointer;
+}
+.social-icons:hover {
+  /* transform: translate3d(3px, 0, 0); */
+  font-size: 60px;
 }
 
 #fb {
@@ -116,4 +141,40 @@ nav {
 }
 #github {
   color: #171516;
+}
+
+.main {
+  /* background: red; */
+  min-height: 100vh;
+  /* width: 30%; */
+  margin: 20px 0 0 350px;
+  color: #1e2327;
+  opacity: ;
+}
+
+.about {
+  text-align: justify;
+  height: 100%;
+  /* background: black; */
+  width: 40%;
+}
+
+#tsparticles {
+  position: absolute;
+  z-index: -1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+.hireme {
+  margin-right: 5px;
+}
+
+.skills {
+  background: #36283c;
+  height: 40vh;
 }
